@@ -1,1 +1,3 @@
-# Supervised_Link_Prediction_Using_Spark_and_Neo4j
+# Large Scale Supervised Link prediction with Spark Graph libraries and Spark MLlib
+
+Contributors
