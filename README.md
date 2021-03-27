@@ -27,6 +27,33 @@
 
 4.After features are calculated, they are assembled and machine learning algorithms are applied on all combinations of features. We will compare the better performing features and analyze the cost of calculating them. The features which cost more or adding no value can be removed.
 
+# Project Flow
+
+1. Preprocess RDF files to structured file. Our edges are directed and are directed from Paper to author. We don't have a direct undirected edge from author to author. Hence reduce the Paper to author edge to undirected edge between author and author so that its easy for computation. Store this in snappy compressed parquet.
+
+2.Sample the complete graph using Connected components and write the components to a file.
+
+3.Pick required number of components that we could analyze on cluster. (generate_subgraphs_using_connectedcomponents_app)
+
+4.Generate samples(author pairs) and training and testing samples(author pairs) and Graphs. To maintain class balance sample for both link exists and not exists    almost equally.(generate_samples_and_subgraphs)
+
+5.Calculate Pagerank (calculate_pagerank)
+
+6.Calculate preferential attchment(calculate_preferential_attachment)
+
+7.Calculate Common neighbours(calculate_common_neighbours)
+
+8.Calculate First Shortest Path(calculate_first_shortest_path)
+
+9.Calculate Second Shortest Path (calculate_second_shortest_path)
+
+10.Calculate Connected Component Feature (calculate_feature_connectedcomponent)
+
+11.Assemble all the above graph topological features in single file(assemble_features)
+
+12.Supervised Link prediction using different algorithms on all combinations of features (supervised_link_prediction)
+
+
 
 
 
