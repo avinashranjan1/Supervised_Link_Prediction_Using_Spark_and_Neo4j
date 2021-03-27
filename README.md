@@ -75,6 +75,19 @@
 
 Credits(Connected components Big star and small star algorithm) : Sirish Kumar: https://www.linkedin.com/pulse/connected-component-using-map-reduce-apache-spark-shirish-kumar/
 
+# Results
+
+1.Our Graph data was extremely skewed with very few huge connected components and large number of components with really less connections. This followed a power law distribution.
+
+2.We observed that Connected component performed much better with page rank coming in second and preferential attachment at third place, All these three features had average F1 scores around 0.7. Shortest path itself did not add much value, but boosted accuracy/F1 measure a bit when combined with Preferential attachment. But cost of calculating paths for huge graphs is more, hence it could be ignored in case of our type of scenario. Also Average F1 scores of top three performing features doesn't differ by much, Hence we could deduce for our dataset that we could skip computing connected components and just compute preferential attachment and pagerank which are much cheaper to calculate and achieve almost same results.
+    
+3.We observed that the link prediction performance goes up if we include more edges and vertices in our graph data and also if there is no class imbalance in samples.
+
+4.Since we were able to extract four features for 1989/90 and 91 dataset, we got around 78% accuracy and good f1 score for preferential attachment and first shortest path combined. However preferential attachmnet itself was able to successfully classify around 75% of the data properly, Hence this was an MVF(most valuable feature) in our system.
+
+5.For 2016/17 and 18 dataset, Since we sampled from graph our accuracy dropped to 66% for preferential attchment for graph with 12 Million edges and increased to 70% for graph with 30 Million edges. For First shortest path and preferential attachment from 12 Million graph combined we were getting accuracy around 63%. This was due to large number of false positives which occured due to sampling of the graph.Still Preferential attachment was the cheap and best feature that could classify the data for our dataset and setup.
+
+
 
 
 
