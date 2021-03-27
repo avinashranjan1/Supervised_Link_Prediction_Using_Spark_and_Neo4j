@@ -88,6 +88,18 @@ Credits(Connected components Big star and small star algorithm) : Sirish Kumar: 
 5.For 2016/17 and 18 dataset, Since we sampled from graph our accuracy dropped to 66% for preferential attchment for graph with 12 Million edges and increased to 70% for graph with 30 Million edges. For First shortest path and preferential attachment from 12 Million graph combined we were getting accuracy around 63%. This was due to large number of false positives which occured due to sampling of the graph.Still Preferential attachment was the cheap and best feature that could classify the data for our dataset and setup.
 
 
+# Project Report
 
+Graph_ML_Techincal_Report.pdf. --> updated in github repo
+
+# Project Presentation slides
+
+https://docs.google.com/presentation/d/1Dqt2DUMNdi5HUj3yzbSgTxGzUeB4z_AAtIBsthxgP-k/edit?usp=sharing
+
+https://docs.google.com/presentation/d/1KR0E8gnkixLbtSzxZ5TIiIn4nUsXGKkvr-IF-PWkv7c/edit?usp=sharing
+
+# Data Description
+
+https://docs.microsoft.com/en-us/academic-services/graph/reference-data-schema
 
 
