@@ -1,3 +1,29 @@
 # Large Scale Supervised Link prediction with Spark Graph libraries and Spark MLlib
 
-Contributors
+# Contributors
+
+1.Avinash Ranjan Singh
+2.2.Khamar Zama
+3.Madhu Sirivella
+4.Pramod Bontha
+5.Sanjeeth Busnur
+6.Suraj Shashidhar
+
+# Aims
+
+1.To evaluate how the system performs link prediction on spark graph libraries and Spark MLLib
+2.Comparison of frameworks.(Neo4j and GraphX).
+3.Categorisation of features based on complexity and their contribution
+4.Considerations on how to improve temporal aspects for working with graphs
+5.Comparision of classifiers and Machine learning models for the link prediction between two authors.
+
+# Project Structure
+
+1.Project has been split up into many phases functionally and each functional requirement has self contained code(module) and dependencies.(Preprocess_input_text_to_parque
+2.Each module has a main driver program which orchestrates the logic, a parameter constants file which includes application variables and a utilities file which    actually consists of feature calculation logic , data loading and cleaning. The parameter file can be changed so that code can run both in local and on cluster.
+3.We are trying initially to calculate 5 features such as pagerank, preferential attachment, common neighbours, first shortest path and second shortest path. Later we added Connected components itself as a feature as we hadto compute this due to below challenges mentioned. We will log the run time in code and find out resources consumed(RAM/Disk/Network) on Yarn UI.
+4.After features are calculated, they are assembled and machine learning algorithms are applied on all combinations of features. We will compare the better performing features and analyze the cost of calculating them. The features which cost more or adding no value can be removed.
+
+
+
+
