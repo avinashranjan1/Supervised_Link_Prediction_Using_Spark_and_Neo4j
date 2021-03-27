@@ -5,11 +5,15 @@
 
 1.Avinash Ranjan
 
-3.Khamar Zama
-4.Madhu Sirivella
-5.Pramod Bontha
-6.Sanjeeth Busnur
-7.Suraj Shashidhar
+2.Khamar Zama
+
+3.Madhu Sirivella
+
+4.Pramod Bontha
+
+5.Sanjeeth Busnur
+
+6.Suraj Shashidhar
 
 # Aims
 
