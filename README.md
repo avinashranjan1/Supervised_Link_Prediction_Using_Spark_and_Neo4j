@@ -62,13 +62,13 @@
 # Challenges Faced
 
 
-    Our Cluster was a comparitively smaller one and shared with 7 datanodes having maximun allocatable container per node was with 4 cores and 8 GB. This did not scale well for 2016/2017 and 2018 dataset which had 2.2 billion edges and 350 million vertices. But this scaled okay for 1989,1990 and 1991 dataset which had 10 million vertices and 80 million edges.
+Our Cluster was a comparitively smaller one and shared with 7 datanodes having maximun allocatable container per node was with 4 cores and 8 GB. This did not scale well for 2016/2017 and 2018 dataset which had 2.2 billion edges and 350 million vertices. But this scaled okay for 1989,1990 and 1991 dataset which had 10 million vertices and 80 million edges.
 
-    Due to this we had to sample the 2016 graph and apply connected components on them. Later we choose only the number of components which we could work on in our cluster. Hence we used connected components itself as one of the feature and surprisingly it performed relatively well for link prediction.
+Due to this we had to sample the 2016 graph and apply connected components on them. Later we choose only the number of components which we could work on in our cluster. Hence we used connected components itself as one of the feature and surprisingly it performed relatively well for link prediction.
 
-    Connected components from Spark did not work for us, hence we need to use an algorithm called Big star / Small star algorithm (See Bottom for more details)
+Connected components from Spark did not work for us, hence we need to use an algorithm called Big star / Small star algorithm (See Bottom for more details)
 
-    Path based algorithms from GraphX didn't scale well for us as edges increases. We couldn't apply Shortest paths or BFS for large number of samples on graph due to scaling issues. However this works fine for smaller samples.
+Path based algorithms from GraphX didn't scale well for us as edges increases. We couldn't apply Shortest paths or BFS for large number of samples on graph due to scaling issues. However this works fine for smaller samples.
 
 Credits(Connected components Big star and small star algorithm) : Sirish Kumar: https://www.linkedin.com/pulse/connected-component-using-map-reduce-apache-spark-shirish-kumar/
 
