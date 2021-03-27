@@ -2,7 +2,7 @@
 
 # Contributors
 
-1.Avinash Ranjan Singh
+1.Avinash Ranjan
 2.2.Khamar Zama
 3.Madhu Sirivella
 4.Pramod Bontha
